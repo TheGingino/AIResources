@@ -80,6 +80,22 @@ public int preGenerate = 0;
     [Serializable] class EmailJson { public string subject; public string body; public string expected; public string parentName; }
     [Serializable] class GradeJson { public string decision; public string reason; }
 
+    
+    private Transform ResolveRoot(Transform context)
+    {
+        if (context != null)
+        {
+            // Try to clamp to the nearest Canvas or panel so we don't grab other windows by accident.
+            var canvas = context.GetComponentInParent<Canvas>(includeInactive: true);
+            if (canvas) return canvas.transform;
+
+            // Otherwise: nearest panel-like container
+            var panel = context.GetComponentInParent<RectTransform>(includeInactive: true);
+            if (panel) return panel.transform;
+        }
+        return transform;
+    }
+
     void Start()
     {
         if (preGenerate > 0)
