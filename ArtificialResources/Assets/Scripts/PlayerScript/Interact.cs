@@ -41,7 +41,7 @@ public class Interact : MonoBehaviour
         if(Input.GetKey(KeyCode.E) && isInteractable)
         {
             Debug.Log("Sitting down");
-            cam.targetTexture = rt;
+            //cam.targetTexture = rt;
             Cursor.lockState = CursorLockMode.None;
         }
 
