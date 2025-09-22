@@ -626,7 +626,7 @@ MonoBehaviour:
   aiReplyButton: {fileID: 1474612495}
   humanReplyButton: {fileID: 953468868}
   nextButton: {fileID: 937213333}
-  sendViaSmtp: 0
+  sendViaSmtp: 1
   smtpHost: smtp.example.com
   smtpPort: 587
   smtpUseSsl: 1

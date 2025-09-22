@@ -842,6 +842,10 @@ PrefabInstance:
       value: 505.0811
       objectReference: {fileID: 0}
     - target: {fileID: 3371427941561997400, guid: adcf6341f67e1214dbf6887400662cb9, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 66.8978
+      objectReference: {fileID: 0}
+    - target: {fileID: 3371427941561997400, guid: adcf6341f67e1214dbf6887400662cb9, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.2
       objectReference: {fileID: 0}
@@ -851,7 +855,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3371427941561997400, guid: adcf6341f67e1214dbf6887400662cb9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 14.7
+      value: 19.5533
       objectReference: {fileID: 0}
     - target: {fileID: 4465535677388520731, guid: adcf6341f67e1214dbf6887400662cb9, type: 3}
       propertyPath: m_fontSize
@@ -937,6 +941,10 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 6043838460912122113, guid: adcf6341f67e1214dbf6887400662cb9, type: 3}
+      propertyPath: m_GlobalPointSize
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 6226177238554272377, guid: adcf6341f67e1214dbf6887400662cb9, type: 3}
       propertyPath: m_fontSize
       value: 30
@@ -963,15 +971,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7359574401850931923, guid: adcf6341f67e1214dbf6887400662cb9, type: 3}
       propertyPath: m_fontSize
-      value: 24
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 7359574401850931923, guid: adcf6341f67e1214dbf6887400662cb9, type: 3}
       propertyPath: m_margin.w
-      value: -0.38933948
+      value: -11.756451
+      objectReference: {fileID: 0}
+    - target: {fileID: 7359574401850931923, guid: adcf6341f67e1214dbf6887400662cb9, type: 3}
+      propertyPath: m_margin.x
+      value: 48.99675
       objectReference: {fileID: 0}
     - target: {fileID: 7359574401850931923, guid: adcf6341f67e1214dbf6887400662cb9, type: 3}
       propertyPath: m_margin.y
-      value: -21.090706
+      value: -6.5710297
       objectReference: {fileID: 0}
     - target: {fileID: 7359574401850931923, guid: adcf6341f67e1214dbf6887400662cb9, type: 3}
       propertyPath: m_margin.z
@@ -983,7 +995,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7359574401850931923, guid: adcf6341f67e1214dbf6887400662cb9, type: 3}
       propertyPath: m_fontSizeBase
-      value: 24
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 7388672964456605213, guid: adcf6341f67e1214dbf6887400662cb9, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -991,15 +1003,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7394553147184980372, guid: adcf6341f67e1214dbf6887400662cb9, type: 3}
       propertyPath: m_fontSize
-      value: 30
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 7394553147184980372, guid: adcf6341f67e1214dbf6887400662cb9, type: 3}
       propertyPath: m_margin.w
-      value: -298.37692
+      value: -260.9616
       objectReference: {fileID: 0}
     - target: {fileID: 7394553147184980372, guid: adcf6341f67e1214dbf6887400662cb9, type: 3}
       propertyPath: m_margin.x
       value: -190.24445
+      objectReference: {fileID: 0}
+    - target: {fileID: 7394553147184980372, guid: adcf6341f67e1214dbf6887400662cb9, type: 3}
+      propertyPath: m_margin.y
+      value: 25.07209
       objectReference: {fileID: 0}
     - target: {fileID: 7394553147184980372, guid: adcf6341f67e1214dbf6887400662cb9, type: 3}
       propertyPath: m_margin.z
@@ -1007,7 +1023,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7394553147184980372, guid: adcf6341f67e1214dbf6887400662cb9, type: 3}
       propertyPath: m_fontSizeBase
-      value: 30
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 7543840389440185458, guid: adcf6341f67e1214dbf6887400662cb9, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
