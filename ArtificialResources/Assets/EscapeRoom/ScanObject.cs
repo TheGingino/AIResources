@@ -1,3 +1,7 @@
+
+using System.Collections;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class ScanObject : MonoBehaviour
@@ -25,5 +29,6 @@ public class ScanObject : MonoBehaviour
     private void SetCurrentTarget(ScannableObject target)
     {
         targetObj = target;
+
     }
 }
