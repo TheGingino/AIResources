@@ -1,0 +1,1186 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3515392506608344733
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 478672694850946505}
+  m_Layer: 0
+  m_Name: Picture Holder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &478672694850946505
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3515392506608344733}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.2976005, y: 1.0408707, z: -1.0132953}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2000277176562948875}
+  - {fileID: 9186961259988809765}
+  - {fileID: 887495120194453061}
+  - {fileID: 9186527604489557806}
+  - {fileID: 8801829483723453636}
+  - {fileID: 8639833551932394104}
+  - {fileID: 6535841534049459810}
+  - {fileID: 1624148502897015821}
+  - {fileID: 8227985833608148535}
+  - {fileID: 4345576641260221989}
+  - {fileID: 538282921617088890}
+  - {fileID: 3831469842108908352}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &129647396415642744
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 478672694850946505}
+    m_Modifications:
+    - target: {fileID: 2170248263303838020, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_Name
+      value: Picture (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294495289485421664, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2c93efb5e04addf4fb76405cc1b144c2, type: 2}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.785
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.052
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.711
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2170248263303838020, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5712128408430113033}
+  m_SourcePrefab: {fileID: 100100000, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+--- !u!1 &2293137958171747644 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2170248263303838020, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+  m_PrefabInstance: {fileID: 129647396415642744}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5712128408430113033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2293137958171747644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd9cd82e761c9db4bb9cc8d21780c8d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Muslim.
+  snippet: An image of a muslim person.
+  tags:
+  - Pet
+  - Biased
+  - 'White '
+  - Male
+  - Dog
+  metadataJson: 'A white muslim man, despite most muslims being brown. '
+--- !u!4 &8639833551932394104 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+  m_PrefabInstance: {fileID: 129647396415642744}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &289900318109392951
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 478672694850946505}
+    m_Modifications:
+    - target: {fileID: 2170248263303838020, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_Name
+      value: Picture (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294495289485421664, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 92e840d34563b024ea38a92b22239e25, type: 2}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.655
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.076
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.733
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2170248263303838020, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5934951890599323356}
+  m_SourcePrefab: {fileID: 100100000, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+--- !u!1 &1881285842606807411 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2170248263303838020, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+  m_PrefabInstance: {fileID: 289900318109392951}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5934951890599323356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881285842606807411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd9cd82e761c9db4bb9cc8d21780c8d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: A family
+  snippet: An image of a multiracial family
+  tags:
+  - Family
+  - Multicultural
+  metadataJson: 'A multi racial family. '
+--- !u!4 &8227985833608148535 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+  m_PrefabInstance: {fileID: 289900318109392951}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &672417190807236133
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 478672694850946505}
+    m_Modifications:
+    - target: {fileID: 2170248263303838020, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_Name
+      value: Picture (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294495289485421664, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d1c7d45b55e5dac448201dd8288a0ca6, type: 2}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.33960056
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.73716503
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2170248263303838020, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9143966106086501440}
+  m_SourcePrefab: {fileID: 100100000, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+--- !u!1 &1678332564974884705 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2170248263303838020, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+  m_PrefabInstance: {fileID: 672417190807236133}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &9143966106086501440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678332564974884705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd9cd82e761c9db4bb9cc8d21780c8d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Big Woman
+  snippet: 'An image generated when asked to generate a chubby woman '
+  tags:
+  - Fat
+  - Woman
+  - 'White '
+  - Real
+  metadataJson: Woman depicted as chubby after asking for a chubby woman.
+--- !u!4 &9186961259988809765 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+  m_PrefabInstance: {fileID: 672417190807236133}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &673104968985444654
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 478672694850946505}
+    m_Modifications:
+    - target: {fileID: 2170248263303838020, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_Name
+      value: Picture (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294495289485421664, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b783ab0c8f67a824ba76079e94bdc94d, type: 2}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.33960056
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.157
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.2977047
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2170248263303838020, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 738068681966100021}
+  m_SourcePrefab: {fileID: 100100000, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+--- !u!1 &1677903307790596202 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2170248263303838020, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+  m_PrefabInstance: {fileID: 673104968985444654}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &738068681966100021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677903307790596202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd9cd82e761c9db4bb9cc8d21780c8d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Presidents of Asia
+  snippet: An image generated of two presidents of asian countries
+  tags:
+  - 'President '
+  - Asian
+  - Male
+  metadataJson: After asking for two asian presidents, it gives the correct image
+--- !u!4 &9186527604489557806 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+  m_PrefabInstance: {fileID: 673104968985444654}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &868106212424770244
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 478672694850946505}
+    m_Modifications:
+    - target: {fileID: 2170248263303838020, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_Name
+      value: Picture
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294495289485421664, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d854bc6dab35f6745a0722d3c6ded706, type: 2}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.742
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.052
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.711
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2170248263303838020, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1386800935685726577}
+  m_SourcePrefab: {fileID: 100100000, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+--- !u!1 &1302216819356031872 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2170248263303838020, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+  m_PrefabInstance: {fileID: 868106212424770244}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1386800935685726577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302216819356031872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd9cd82e761c9db4bb9cc8d21780c8d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Man with dog
+  snippet: 'An image generated when asked for a person depicted with a pet. '
+  tags:
+  - Pet
+  - Biased
+  - 'White '
+  - Male
+  - Dog
+  metadataJson: 'Not being specific, it created a an image of a white male with a
+    golden retriever dog. We willen mensen leren dat AI bevooroordeeld kan zijn of
+    onjuiste informatie kan geven, omdat de data waarmee het getraind wordt, door
+    bedrijven beheerd kan worden.
+
+
+
+    Daarnaast willen we games maken die je zowel
+    leren over AI als over het gebruik ervan, en dat leuk maken.'
+--- !u!4 &8801829483723453636 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+  m_PrefabInstance: {fileID: 868106212424770244}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3213804829457844322
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 478672694850946505}
+    m_Modifications:
+    - target: {fileID: 2170248263303838020, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_Name
+      value: Picture (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294495289485421664, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e89f5cc64604bb744a411948b6d2e36b, type: 2}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.6509767
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.711
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2170248263303838020, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8315970515129580696}
+  m_SourcePrefab: {fileID: 100100000, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+--- !u!1 &3641159452853743910 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2170248263303838020, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+  m_PrefabInstance: {fileID: 3213804829457844322}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8315970515129580696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3641159452853743910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd9cd82e761c9db4bb9cc8d21780c8d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: French chef
+  snippet: An image generated when asked for a person depicted a chef
+  tags:
+  - Cartoon
+  - Chef
+  - 'White '
+  - Male
+  metadataJson: 'a french cartoon chef. '
+--- !u!4 &6535841534049459810 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+  m_PrefabInstance: {fileID: 3213804829457844322}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4829651886279759168
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 478672694850946505}
+    m_Modifications:
+    - target: {fileID: 2170248263303838020, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_Name
+      value: Picture (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294495289485421664, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e8d7d374f81caff4297f7f2d061d1050, type: 2}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.624
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.051999986
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.733
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2170248263303838020, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9221254062782846253}
+  m_SourcePrefab: {fileID: 100100000, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+--- !u!4 &3831469842108908352 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+  m_PrefabInstance: {fileID: 4829651886279759168}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6708141887009729540 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2170248263303838020, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+  m_PrefabInstance: {fileID: 4829651886279759168}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &9221254062782846253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6708141887009729540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd9cd82e761c9db4bb9cc8d21780c8d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Poor man
+  snippet: An image generated of a third world country man
+  tags:
+  - brown
+  - Biased
+  - Poor
+  - Male
+  - Indian
+  metadataJson: 'When asked to make an image of someone poor, it created an image
+    of an indan man. '
+--- !u!1001 &5360644366938071077
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 478672694850946505}
+    m_Modifications:
+    - target: {fileID: 2170248263303838020, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_Name
+      value: Picture (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294495289485421664, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 1aef813021c07844dae2169fbff95a6f, type: 2}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.624
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.79999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.733
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2170248263303838020, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3792045147866471950}
+  m_SourcePrefab: {fileID: 100100000, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+--- !u!4 &4345576641260221989 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+  m_PrefabInstance: {fileID: 5360644366938071077}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6087337182419802465 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2170248263303838020, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+  m_PrefabInstance: {fileID: 5360644366938071077}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3792045147866471950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6087337182419802465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd9cd82e761c9db4bb9cc8d21780c8d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Ancient warrior
+  snippet: An image generated of an ancient japanese warrior
+  tags:
+  - Asian
+  - Male
+  - Samurai
+  - Cartoon
+  metadataJson: When asked to generate an image of an ancient japanese warrior, it
+    gave this
+--- !u!1001 &6962671940241631757
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 478672694850946505}
+    m_Modifications:
+    - target: {fileID: 2170248263303838020, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_Name
+      value: Picture (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294495289485421664, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f45c12198ed573d44b632d7c6dbc76cb, type: 2}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.785
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.79999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.711
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2170248263303838020, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1731370208716568327}
+  m_SourcePrefab: {fileID: 100100000, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+--- !u!4 &1624148502897015821 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+  m_PrefabInstance: {fileID: 6962671940241631757}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &9132777163933389641 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2170248263303838020, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+  m_PrefabInstance: {fileID: 6962671940241631757}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1731370208716568327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9132777163933389641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd9cd82e761c9db4bb9cc8d21780c8d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: a friendgroup
+  snippet: an image of a varied friend group
+  tags:
+  - Varied
+  - Multicultrual
+  - friends
+  metadataJson: an image of a varied friendgroup.
+--- !u!1001 &7919626359190392075
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 478672694850946505}
+    m_Modifications:
+    - target: {fileID: 2170248263303838020, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_Name
+      value: Picture
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.33960056
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.13271517
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.73716503
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2170248263303838020, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1375152944147614222}
+  m_SourcePrefab: {fileID: 100100000, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+--- !u!4 &2000277176562948875 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+  m_PrefabInstance: {fileID: 7919626359190392075}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8355988731596846159 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2170248263303838020, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+  m_PrefabInstance: {fileID: 7919626359190392075}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1375152944147614222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8355988731596846159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd9cd82e761c9db4bb9cc8d21780c8d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Russian Man
+  snippet: 'An image generated when asked to generate a russian man. '
+  tags:
+  - Russian
+  - Biased
+  - 'White '
+  - Male
+  metadataJson: 'Russian man depicted as a soviet soldier for an unknown reason.We
+    willen mensen leren dat AI bevooroordeeld kan zijn of onjuiste informatie kan
+    geven, omdat de data waarmee het getraind wordt, door bedrijven beheerd kan worden.
+
+
+
+    Daarnaast
+    willen we games maken die je zowel leren over AI als over het gebruik ervan,
+    en dat leuk maken.'
+--- !u!1001 &8165622331107145594
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 478672694850946505}
+    m_Modifications:
+    - target: {fileID: 2170248263303838020, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_Name
+      value: Picture (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294495289485421664, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0cc4283f83923944bba2f2214472d49a, type: 2}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.769
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.809
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.733
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2170248263303838020, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8460566907000505997}
+  m_SourcePrefab: {fileID: 100100000, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+--- !u!4 &538282921617088890 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+  m_PrefabInstance: {fileID: 8165622331107145594}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8019885586573774398 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2170248263303838020, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+  m_PrefabInstance: {fileID: 8165622331107145594}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8460566907000505997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8019885586573774398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd9cd82e761c9db4bb9cc8d21780c8d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Religious woman
+  snippet: 'An image of a woman who practices a religon. '
+  tags:
+  - Woman
+  - Religion
+  metadataJson: 'When asked to make a woman who does religion, it automatically created
+    a nun. '
+--- !u!1001 &8825726321521010757
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 478672694850946505}
+    m_Modifications:
+    - target: {fileID: 2170248263303838020, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_Name
+      value: Picture
+      objectReference: {fileID: 0}
+    - target: {fileID: 7294495289485421664, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3d889bdf1e7c0bb4bbd4518d8f3ca7df, type: 2}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.33960056
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.796
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.2977047
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2170248263303838020, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7249494117653843033}
+  m_SourcePrefab: {fileID: 100100000, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+--- !u!4 &887495120194453061 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8514692022886864384, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+  m_PrefabInstance: {fileID: 8825726321521010757}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7234190679343173889 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2170248263303838020, guid: f8a8d9a262a269142ae63b476b2e7221, type: 3}
+  m_PrefabInstance: {fileID: 8825726321521010757}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7249494117653843033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7234190679343173889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd9cd82e761c9db4bb9cc8d21780c8d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: 'President '
+  snippet: 'An image generated when asked to generate a president. '
+  tags:
+  - 'President '
+  - Biased
+  - 'White '
+  - Male
+  metadataJson: 'Despite not asking for a president of America, it gave me a male
+    white president of America. '
