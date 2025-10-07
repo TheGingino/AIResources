@@ -14,18 +14,15 @@ public class ScanObject : MonoBehaviour
     /// <summary>
     /// Casts a ray forward when E is pressed and scans the first object with ScannableObject component.
     /// </summary>
-    async void Update()
+     void Update()
     {
-        if (!Input.GetKeyDown(KeyCode.E)) return;
+        if (Input.GetKeyDown(KeyCode.E)) return;
         
-        scanEffect.SetActive(true);
-        await Task.Delay(5000);
-        scanEffect.SetActive(false);
-        
+     
         RaycastHit hit;
         
         if (!Physics.Raycast(transform.position, transform.forward, out hit, 10f)) return;
-        Debug.Log("Mashallah"); 
+       
 
         var scannable = hit.transform.GetComponent<ScannableObject>()
                         ?? hit.transform.GetComponentInParent<ScannableObject>();
@@ -33,10 +30,12 @@ public class ScanObject : MonoBehaviour
         if (scannable == null) return;
 
         SetCurrentTarget(scannable);
-        await scanner.ScanAsync(targetObj);
-        if (Input.GetKeyDown(KeyCode.S))
+        
+        if (Input.GetKeyDown(KeyCode.S) && targetObj != null)
         {
+            Debug.Log("Hellllooo");
             targetObj.gameObject.tag = "Scanned";
+            Debug.Log($"Tagged {targetObj.gameObject.name} as {targetObj.gameObject.tag}");
         }
     }
 
