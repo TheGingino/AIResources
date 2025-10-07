@@ -8,6 +8,8 @@ public class ScanObject : MonoBehaviour
 {
     [SerializeField] private Scanner scanner;
     [SerializeField] private ScannableObject targetObj;
+    
+    [SerializeField] private GameObject scanEffect;
 
     /// <summary>
     /// Casts a ray forward when E is pressed and scans the first object with ScannableObject component.
@@ -15,7 +17,13 @@ public class ScanObject : MonoBehaviour
     async void Update()
     {
         if (!Input.GetKeyDown(KeyCode.E)) return;
+        
+        scanEffect.SetActive(true);
+        await Task.Delay(5000);
+        scanEffect.SetActive(false);
+        
         RaycastHit hit;
+        
         if (!Physics.Raycast(transform.position, transform.forward, out hit, 10f)) return;
         Debug.Log("Mashallah"); 
 
