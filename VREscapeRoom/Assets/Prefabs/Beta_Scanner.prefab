@@ -267,7 +267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abab86c2135e92547945f0cdfc3be70b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _scanner: {fileID: 4848228550745290972}
+  scanner: {fileID: 0}
   targetObj: {fileID: 7416010481689941969}
 --- !u!1 &8131863871574511241
 GameObject:
