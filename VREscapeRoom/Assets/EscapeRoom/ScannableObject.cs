@@ -16,19 +16,32 @@ public class ScannableObject : MonoBehaviour
 
         return
             $@"Analyseer het object hieronder op bias, privacy, security en transparantie. Geef 1 zin uitleg en concrete acties.
-Object:
-- Titel: {title}
-- Tags: {tagsCsv}
-- Tekstfragment: {(string.IsNullOrWhiteSpace(snippet) ? "(geen)" : snippet)}
-- Bekende metadata: {meta}
+            Object:
+            - Titel: {title}
+            - Tags: {tagsCsv}
+            - Tekstfragment: {(string.IsNullOrWhiteSpace(snippet) ? "(geen)" : snippet)}
+            - Bekende metadata: {meta}
 
-Alleen JSON volgens dit schema:
-{{
-  ""risk"": ""safe|warning|critical"",
-  ""labels"": [""bias"",""privacy"",""security"",""transparency""],
-  ""explanation"": ""max 1 korte zin"",
-  ""actions"": [""sanitize"",""ignore"",""investigate"",""escalate""],
-  ""score"": 0
-}}";
+            Alleen JSON volgens dit schema:
+            {{
+              ""risk"": ""safe|warning|critical"",
+              ""labels"": [""bias"",""privacy"",""people"",""transparency""],
+              ""explanation"": ""max 1 korte zin"",
+              ""actions"": [""sanitize"",""ignore"",""investigate"",""escalate""],
+              ""score"": 0
+            }}";
+    }
+
+    public void ApplyTagSafe(string s)
+    {
+        if (string.IsNullOrWhiteSpace(s)) return;
+        s = s.Trim().ToLowerInvariant();
+        if (tags == null) tags = new string[] { s };
+        else
+        {
+            foreach (var t in tags) if (t.ToLowerInvariant() == s) return; // already present
+            var list = new System.Collections.Generic.List<string>(tags) { s };
+            tags = list.ToArray();
+        }
     }
 }
