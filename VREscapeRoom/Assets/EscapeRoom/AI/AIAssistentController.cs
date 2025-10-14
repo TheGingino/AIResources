@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class AIAssistantController : MonoBehaviour
 {
@@ -23,10 +24,12 @@ public class AIAssistantController : MonoBehaviour
             title: obj.title,
             status: status.ToUpperInvariant(),
             color: color,
-            explanation: line,
             labels: labelText,
             actions: actions,
             score: r?.score ?? 0
         );
+
+        // Only prepare the explanation; UI button will reveal it on click
+        ui.PrepareExplanation(line);
     }
 }
