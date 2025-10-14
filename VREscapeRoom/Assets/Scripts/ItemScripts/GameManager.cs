@@ -5,8 +5,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    public Slider BiasBar, AccuracyBar;
-    internal float BiasValue, AccuracyValue;
+    public Slider BiasBar, AccuracyBar, DataBar;
+    internal float BiasValue, AccuracyValue, DatabreachValue;
 
     private void Update()
     {

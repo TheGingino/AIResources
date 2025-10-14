@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FillBar : MonoBehaviour
 {
-    public float BiasProgress, AccuracyProgress;
+    public float BiasProgress, AccuracyProgress, DataBreachBar;
 
 
     private void Update()
@@ -20,6 +20,7 @@ public class FillBar : MonoBehaviour
     {
         GameManager.Instance.BiasValue += BiasProgress;
         GameManager.Instance.AccuracyValue += AccuracyProgress;
+        GameManager.Instance.DatabreachValue += DataBreachBar;
         gameObject.SetActive(false);
     }
 }
