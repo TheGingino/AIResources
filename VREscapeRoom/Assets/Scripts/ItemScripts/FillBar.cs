@@ -5,6 +5,13 @@ using UnityEngine;
 public class FillBar : MonoBehaviour
 {
     public float BiasProgress, AccuracyProgress, DataBreachBar;
+    public AudioClip clip;
+    private AudioSource source;
+
+    private void Start()
+    {
+        source = GetComponent<AudioSource>();
+    }
 
 
     private void Update()
@@ -22,5 +29,6 @@ public class FillBar : MonoBehaviour
         GameManager.Instance.AccuracyValue += AccuracyProgress;
         GameManager.Instance.DatabreachValue += DataBreachBar;
         gameObject.SetActive(false);
+        source.PlayOneShot(clip);
     }
 }
