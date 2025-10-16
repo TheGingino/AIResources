@@ -29,10 +29,12 @@ Material:
     m_Ints: []
     m_Floats:
     - _DstBlend: 10
+    - _FresnelPower: 5
     - _QueueControl: 0
     - _SrcBlend: 5
     m_Colors:
     - _FresnelColor: {r: 21.361254, g: 0, b: 0, a: 1}
+    - _ScanLineSpeed: {r: 0, g: 0.1, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &3575060140318210838
 MonoBehaviour:
