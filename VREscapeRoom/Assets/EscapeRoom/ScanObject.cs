@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Inputs.Readers;
 
 public class ScanObject : MonoBehaviour
 {
@@ -10,19 +12,32 @@ public class ScanObject : MonoBehaviour
     [SerializeField] private ScannableObject targetObj;
     
     [SerializeField] private GameObject scanEffect;
+    
+    private void Start()
+    {
+        if (scanner == null)
+        {
+            scanner = FindObjectOfType<Scanner>();
+        }
+    }
 
     /// <summary>
     /// Casts a ray forward when E is pressed and scans the first object with ScannableObject component.
     /// </summary>
      void Update()
      {
-         ScanTarget();
-        if (Input.GetKeyDown(KeyCode.S) && targetObj != null)
-        {
-            Debug.Log("Hellllooo");
-            targetObj.gameObject.tag = "Scanned";
-            Debug.Log($"Tagged {targetObj.gameObject.name} as {targetObj.gameObject.tag}");
-        }
+         if (Input.GetKeyDown(KeyCode.E))
+         {
+             ScanTarget();
+         }
+
+
+         if (Input.GetKeyDown(KeyCode.S) && targetObj != null)
+         {
+             Debug.Log("Hellllooo");
+             targetObj.gameObject.tag = "Scanned";
+             Debug.Log($"Tagged {targetObj.gameObject.name} as {targetObj.gameObject.tag}");
+         }
     }
 
     private void SetCurrentTarget(ScannableObject target)
@@ -31,15 +46,16 @@ public class ScanObject : MonoBehaviour
 
     }
 
-    private void ScanTarget()
+    public void ScanTarget()
     {
-        if (!Input.GetKeyDown(KeyCode.E)) return;
-
-         if (scanEffect != null)
-         {
-             var effect = Instantiate(scanEffect, transform.position, Quaternion.identity);
-             Destroy(effect, 2f); // Destroy the effect after 2 seconds
-         }
+        //if (!Input.GetKeyDown(KeyCode.E)) return;
+        Debug.Log("ScanTarget called");
+        
+        if (scanEffect != null)
+        { 
+            var effect = Instantiate(scanEffect, transform.position, Quaternion.identity); 
+            Destroy(effect, 2f); // Destroy the effect after 2 seconds
+        }
         
         RaycastHit hit;
         if (!Physics.Raycast(transform.position, transform.forward, out hit, 10f)) return;
