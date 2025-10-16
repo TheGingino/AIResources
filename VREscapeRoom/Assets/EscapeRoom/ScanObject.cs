@@ -70,5 +70,10 @@ public class ScanObject : MonoBehaviour
 
         scanner.ScanAsync(targetObj);
     }
+
+    public void AddObjectData()
+    {
+        targetObj.GetComponent<FillBar>().AddData();
+    }
 }
 
