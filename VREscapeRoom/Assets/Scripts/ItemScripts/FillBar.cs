@@ -7,10 +7,12 @@ public class FillBar : MonoBehaviour
     public float BiasProgress, AccuracyProgress, DataBreachBar;
     public AudioClip clip;
     private AudioSource source;
+    private FillBar bar;
 
     private void Start()
     {
         source = GetComponent<AudioSource>();
+        bar = GetComponent<FillBar>();  
     }
 
 
@@ -25,10 +27,11 @@ public class FillBar : MonoBehaviour
 
     public void AddData()
     {
+        source.PlayOneShot(clip);
         GameManager.Instance.BiasValue += BiasProgress;
         GameManager.Instance.AccuracyValue += AccuracyProgress;
         GameManager.Instance.DatabreachValue += DataBreachBar;
-        gameObject.SetActive(false);
-        source.PlayOneShot(clip);
+        bar.enabled = false;
+        
     }
 }

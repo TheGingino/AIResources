@@ -5,11 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Scanned
+  - Anchor
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Overlay UI
   - Water
   - UI
   - 
