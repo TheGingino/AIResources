@@ -1,4 +1,5 @@
 
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -26,11 +27,10 @@ public class ScanObject : MonoBehaviour
     /// </summary>
      void Update()
      {
-         if (Input.GetKeyDown(KeyCode.E))
+         if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger) || Input.GetKeyDown(KeyCode.E))
          {
              ScanTarget();
          }
-
 
          if (Input.GetKeyDown(KeyCode.S) && targetObj != null)
          {
@@ -43,7 +43,6 @@ public class ScanObject : MonoBehaviour
     private void SetCurrentTarget(ScannableObject target)
     {
         targetObj = target;
-
     }
 
     public void ScanTarget()
@@ -58,17 +57,24 @@ public class ScanObject : MonoBehaviour
         }
         
         RaycastHit hit;
-        if (!Physics.Raycast(transform.position, transform.forward, out hit, 10f)) return;
+        if (!Physics.Raycast(transform.position, transform.forward, out hit, 100f)) return;
         
-        var scannable = hit.transform.GetComponent<ScannableObject>()
-                        ?? hit.transform.GetComponentInParent<ScannableObject>();
-        
+        Debug.Log($"Raycast hit: {hit.transform.name}");
+        var scannable = hit.transform.GetComponent<ScannableObject>() ?? hit.transform.GetComponentInParent<ScannableObject>();
+
         if (scannable == null) return;
 
         SetCurrentTarget(scannable);
         Debug.Log("E pressed");
 
         scanner.ScanAsync(targetObj);
+    }
+
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawRay(transform.position, transform.forward * 10f);
     }
 }
 

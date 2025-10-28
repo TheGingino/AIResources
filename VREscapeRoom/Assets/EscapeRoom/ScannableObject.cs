@@ -7,6 +7,8 @@ public class ScannableObject : MonoBehaviour
     [TextArea] public string snippet;
     public string[] tags;
     [TextArea] public string metadataJson; // bv. {"containsPII":true,"source":"USB","filetype":"csv"}
+    
+    public bool IsMarked { get; private set; }
 
     // Handige helper:
     public string BuildUserPrompt()
@@ -44,4 +46,11 @@ public class ScannableObject : MonoBehaviour
             tags = list.ToArray();
         }
     }
+    
+    public void SetMarked(bool v)
+    {
+        IsMarked = v;
+        // optional: play a sound, flash outline, add a worldspace icon, etc.
+    }
+    
 }
