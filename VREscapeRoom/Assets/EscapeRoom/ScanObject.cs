@@ -71,6 +71,24 @@ public class ScanObject : MonoBehaviour
     }
 
 
+    public void AddTarget()
+    {
+        RaycastHit hit;
+        if (!Physics.Raycast(transform.position, transform.forward, out hit, 100f)) return;
+
+        Debug.Log($"Raycast hit: {hit.transform.name}");
+        var scannable = hit.transform.GetComponent<ScannableObject>() ?? hit.transform.GetComponentInParent<ScannableObject>();
+
+        if (scannable == null) return;
+
+        SetCurrentTarget(scannable);
+        Debug.Log("E pressed");
+
+        scanner.ScanAsync(targetObj);
+
+        
+    }
+
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
