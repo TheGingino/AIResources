@@ -10,7 +10,7 @@ public class DialogueUI : MonoBehaviour
     [Header("Mark Control")]
     public Toggle markToggle;
     public TMP_Text markLabel; // optional label next to the toggle
-    //public Button closeButton; // optional close button
+    public Button closeButton; // optional close button
     
     public Image statusPill;
     public TMP_Text titleText;
@@ -41,7 +41,7 @@ public class DialogueUI : MonoBehaviour
     {
         if (markToggle)
             markToggle.onValueChanged.AddListener(v => { if (!_suppressToggleEvent) OnMarkToggled?.Invoke(v); });
-        //if (closeButton) closeButton.onClick.AddListener(() => OnClosePressed?.Invoke());
+        if (closeButton) closeButton.onClick.AddListener(() => OnClosePressed?.Invoke());
     }
     public void ShowMarkState(bool isMarked)
     {
@@ -94,13 +94,18 @@ public class DialogueUI : MonoBehaviour
 
     public void ShowSystemHint(string text)
     {
-        ShowResult(
-            title: "Systeem",
-            status: "INFO",
-            color: new Color(0.2f, 0.6f, 1f),
-            labels: "",
-            actions: "",
-            score: 0
-        );
+        if (explanationText)
+        {
+            // append or replace — pick one:
+            // explanationText.text += (explanationText.text.Length > 0 ? "\n" : "") + text;
+            explanationText.text = string.IsNullOrEmpty(text) ? " " : text;
+            explanationText.gameObject.SetActive(true);
+        }
+
+        // Ensure we don't accidentally tint other UI
+        //if (statusPill) statusPill.color = _statusPillBaseColor;
+
+        // If you previously hid the explanation behind a button, make it visible:
+        // if (explanationButton) explanationButton.gameObject.SetActive(false);
     }
 }

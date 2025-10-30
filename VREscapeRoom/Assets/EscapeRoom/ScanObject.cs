@@ -1,11 +1,8 @@
 
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+using Oculus.Interaction;
 using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit;
-using UnityEngine.XR.Interaction.Toolkit.Inputs.Readers;
+
 
 public class ScanObject : MonoBehaviour
 {
@@ -14,11 +11,31 @@ public class ScanObject : MonoBehaviour
     
     [SerializeField] private GameObject scanEffect;
     
+    [SerializeField] private OVRGrabber rightGrabber;       // assign your RIGHT hand OVRGrabber in Inspector
+
+    private Rigidbody rb;
+
+    
     private void Start()
     {
+        rb = GetComponent<Rigidbody>();
         if (scanner == null)
         {
             scanner = FindObjectOfType<Scanner>();
+        }
+        if (rightGrabber == null)
+        {
+            // Try to auto-find a right-hand grabber in scene
+            var grabbers = FindObjectsOfType<OVRGrabber>();
+            foreach (var g in grabbers)
+            {
+                // Heuristic: right controllers often include "Right" in the GO name
+                if (g.name.IndexOf("Right", StringComparison.OrdinalIgnoreCase) >= 0)
+                {
+                    rightGrabber = g;
+                    break;
+                }
+            }
         }
     }
 
@@ -27,7 +44,13 @@ public class ScanObject : MonoBehaviour
     /// </summary>
      void Update()
      {
-         if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger) || Input.GetKeyDown(KeyCode.E))
+         float rt = OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger, OVRInput.Controller.RTouch);
+         if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger) && Mathf.Approximately(rt, 1)|| Input.GetKeyDown(KeyCode.E))
+         {
+             ScanTarget();
+         }
+
+         if (OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger)&& rb.isKinematic)
          {
              ScanTarget();
          }
@@ -47,9 +70,10 @@ public class ScanObject : MonoBehaviour
 
     public void ScanTarget()
     {
-        //if (!Input.GetKeyDown(KeyCode.E)) return;
         Debug.Log("ScanTarget called");
-        
+        var grabbed = rightGrabber ? rightGrabber.grabbedObject : null;
+        //if (grabbed == null) return;
+
         if (scanEffect != null)
         { 
             var effect = Instantiate(scanEffect, transform.position, Quaternion.identity); 
@@ -59,8 +83,8 @@ public class ScanObject : MonoBehaviour
         RaycastHit hit;
         if (!Physics.Raycast(transform.position, transform.forward, out hit, 100f)) return;
         
-        Debug.Log($"Raycast hit: {hit.transform.name}");
         var scannable = hit.transform.GetComponent<ScannableObject>() ?? hit.transform.GetComponentInParent<ScannableObject>();
+        Debug.Log($"Raycast hit: {hit.transform.name}");
 
         if (scannable == null) return;
 
@@ -69,30 +93,6 @@ public class ScanObject : MonoBehaviour
 
         scanner.ScanAsync(targetObj);
     }
-
-
-    public void AddTarget()
-    {
-        RaycastHit hit;
-        if (!Physics.Raycast(transform.position, transform.forward, out hit, 100f)) return;
-
-        Debug.Log($"Raycast hit: {hit.transform.name}");
-        var scannable = hit.transform.GetComponent<ScannableObject>() ?? hit.transform.GetComponentInParent<ScannableObject>();
-
-        if (scannable == null) return;
-
-        SetCurrentTarget(scannable);
-        Debug.Log("E pressed");
-
-        scanner.ScanAsync(targetObj);
-
-        
-    }
-
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.green;
-        Gizmos.DrawRay(transform.position, transform.forward * 10f);
-    }
+    
 }
 

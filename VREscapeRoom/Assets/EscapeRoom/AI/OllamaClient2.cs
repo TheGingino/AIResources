@@ -44,6 +44,7 @@ public class OllamaClient2 : MonoBehaviour
         var wrapper = JsonUtility.FromJson<GenerateWrapper>(SanitizeForJson(body));
         return wrapper != null && !string.IsNullOrEmpty(wrapper.response) ? wrapper.response : body;
     }
+    
 
     [Serializable]
     private class GenerateWrapper { public string response; }
