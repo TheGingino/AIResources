@@ -18,9 +18,12 @@ public class AIAssistantController : MonoBehaviour
     private int _lastWholeSecond = -1;
     private bool _timesUpShown;
 
-
     private ScannableObject _current;
-
+    
+    void Awake()
+    {
+        if (ui) ui.OnMarkToggled += HandleMarkToggled;
+    }
     private void Update()
     {
         HandleMarkInput();
@@ -49,6 +52,7 @@ public class AIAssistantController : MonoBehaviour
             //    obj.ApplyTagSafe(t);
             //}
         //}
+        _current = obj;                      // <-- DON’T forget this!
         
         ui.ShowResult(
             title: obj.title,
@@ -58,6 +62,7 @@ public class AIAssistantController : MonoBehaviour
             actions: actions,
             score: r?.score ?? 0
         );
+
 
         // Only prepare the explanation; UI button will reveal it on click
         ui.PrepareExplanation(line);
@@ -91,6 +96,13 @@ public class AIAssistantController : MonoBehaviour
             if (sec == 5 * 60) ui?.ShowSystemHint("Nog 5 minuten. Maak bewuste keuzes—nauwkeurigheid vs. eerlijkheid.");
             if (sec == 60) ui?.ShowSystemHint("Laatste minuut! Finaliseer je dataset of verwijder risicovolle items.");
         }
+    }
+    
+    private void HandleMarkToggled(bool marked)
+    {
+        if (_current == null) return;
+        _current.SetMarked(marked);          // <-- triggers the material swap
+        ui.ShowMarkState(_current.IsMarked); // keep toggle label in sync
     }
     
     private void HandleMarkInput()

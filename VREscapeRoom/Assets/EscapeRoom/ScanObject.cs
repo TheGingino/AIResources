@@ -10,33 +10,16 @@ public class ScanObject : MonoBehaviour
     [SerializeField] private ScannableObject targetObj;
     
     [SerializeField] private GameObject scanEffect;
-    
-    [SerializeField] private OVRGrabber rightGrabber;       // assign your RIGHT hand OVRGrabber in Inspector
-
-    private Rigidbody rb;
 
     
     private void Start()
     {
-        rb = GetComponent<Rigidbody>();
         if (scanner == null)
         {
             scanner = FindObjectOfType<Scanner>();
         }
-        if (rightGrabber == null)
-        {
-            // Try to auto-find a right-hand grabber in scene
-            var grabbers = FindObjectsOfType<OVRGrabber>();
-            foreach (var g in grabbers)
-            {
-                // Heuristic: right controllers often include "Right" in the GO name
-                if (g.name.IndexOf("Right", StringComparison.OrdinalIgnoreCase) >= 0)
-                {
-                    rightGrabber = g;
-                    break;
-                }
-            }
-        }
+        
+        
     }
 
     /// <summary>
@@ -44,13 +27,12 @@ public class ScanObject : MonoBehaviour
     /// </summary>
      void Update()
      {
-         float rt = OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger, OVRInput.Controller.RTouch);
-         if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger) && Mathf.Approximately(rt, 1)|| Input.GetKeyDown(KeyCode.E))
+         if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger)|| Input.GetKeyDown(KeyCode.E))
          {
              ScanTarget();
          }
 
-         if (OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger)&& rb.isKinematic)
+         if (OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger))
          {
              ScanTarget();
          }
@@ -71,7 +53,6 @@ public class ScanObject : MonoBehaviour
     public void ScanTarget()
     {
         Debug.Log("ScanTarget called");
-        var grabbed = rightGrabber ? rightGrabber.grabbedObject : null;
         //if (grabbed == null) return;
 
         if (scanEffect != null)
