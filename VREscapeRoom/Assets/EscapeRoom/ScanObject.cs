@@ -10,8 +10,8 @@ public class ScanObject : MonoBehaviour
     [SerializeField] private ScannableObject targetObj;
     
     [SerializeField] private GameObject scanEffect;
+    private ScannableObject currentScanned;
 
-    
     private void Start()
     {
         if (scanner == null)
@@ -34,7 +34,7 @@ public class ScanObject : MonoBehaviour
 
          if (OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger))
          {
-             ScanTarget();
+             FlagTarget();
          }
 
          if (Input.GetKeyDown(KeyCode.S) && targetObj != null)
@@ -64,15 +64,21 @@ public class ScanObject : MonoBehaviour
         RaycastHit hit;
         if (!Physics.Raycast(transform.position, transform.forward, out hit, 100f)) return;
         
-        var scannable = hit.transform.GetComponent<ScannableObject>() ?? hit.transform.GetComponentInParent<ScannableObject>();
+        currentScanned = hit.transform.GetComponent<ScannableObject>() ?? hit.transform.GetComponentInParent<ScannableObject>();
         Debug.Log($"Raycast hit: {hit.transform.name}");
 
-        if (scannable == null) return;
+        if (currentScanned == null) return;
 
-        SetCurrentTarget(scannable);
+        SetCurrentTarget(currentScanned);
         Debug.Log("E pressed");
 
         scanner.ScanAsync(targetObj);
+    }
+
+    public void FlagTarget()
+    {
+       FillBar fillBar = currentScanned.GetComponent<FillBar>();
+        fillBar.AddData();
     }
     
 }
