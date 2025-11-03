@@ -16971,6 +16971,14 @@ PrefabInstance:
       propertyPath: clip
       value: 
       objectReference: {fileID: 8300000, guid: 0b4d3f7d7adb0db4aa161f14e16b8756, type: 3}
+    - target: {fileID: 1444130559432304455, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
+      propertyPath: DataBreachBar
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 1444130559432304455, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
+      propertyPath: AccuracyProgress
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 1690087591726327794, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
       propertyPath: clip
       value: 
@@ -17023,18 +17031,62 @@ PrefabInstance:
       propertyPath: clip
       value: 
       objectReference: {fileID: 8300000, guid: 0b4d3f7d7adb0db4aa161f14e16b8756, type: 3}
+    - target: {fileID: 2311988192836386323, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
+      propertyPath: BiasProgress
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2311988192836386323, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
+      propertyPath: DataBreachBar
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 2311988192836386323, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
+      propertyPath: AccuracyProgress
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 2330758845698583867, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
       propertyPath: clip
       value: 
       objectReference: {fileID: 8300000, guid: 0b4d3f7d7adb0db4aa161f14e16b8756, type: 3}
+    - target: {fileID: 2330758845698583867, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
+      propertyPath: BiasProgress
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2330758845698583867, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
+      propertyPath: DataBreachBar
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 2359849979079822482, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
       propertyPath: clip
       value: 
       objectReference: {fileID: 8300000, guid: 0b4d3f7d7adb0db4aa161f14e16b8756, type: 3}
+    - target: {fileID: 2359849979079822482, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
+      propertyPath: BiasProgress
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2359849979079822482, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
+      propertyPath: DataBreachBar
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 2359849979079822482, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
+      propertyPath: AccuracyProgress
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 2693761258909091357, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
       propertyPath: clip
       value: 
       objectReference: {fileID: 8300000, guid: 0b4d3f7d7adb0db4aa161f14e16b8756, type: 3}
+    - target: {fileID: 2693761258909091357, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
+      propertyPath: BiasProgress
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 2693761258909091357, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
+      propertyPath: DataBreachBar
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2693761258909091357, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
+      propertyPath: AccuracyProgress
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3433920118130297100, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
       propertyPath: m_Name
       value: DataObjectHolder
@@ -17055,6 +17107,14 @@ PrefabInstance:
       propertyPath: clip
       value: 
       objectReference: {fileID: 8300000, guid: 0b4d3f7d7adb0db4aa161f14e16b8756, type: 3}
+    - target: {fileID: 4366916178264026518, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
+      propertyPath: DataBreachBar
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 4366916178264026518, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
+      propertyPath: AccuracyProgress
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 4448984208430354550, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -17067,6 +17127,14 @@ PrefabInstance:
       propertyPath: clip
       value: 
       objectReference: {fileID: 8300000, guid: 0b4d3f7d7adb0db4aa161f14e16b8756, type: 3}
+    - target: {fileID: 4982921346725510674, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
+      propertyPath: BiasProgress
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4982921346725510674, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
+      propertyPath: DataBreachBar
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 5047513375204478653, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -17088,32 +17156,80 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 65aa7b23174fe5c41b28d370c3ee0dcf, type: 3}
     - target: {fileID: 6417637291430139237, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
+      propertyPath: BiasProgress
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6417637291430139237, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
+      propertyPath: DataBreachBar
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6417637291430139237, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
       propertyPath: AccuracyProgress
-      value: 21
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6583297765613088398, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
       propertyPath: clip
       value: 
       objectReference: {fileID: 8300000, guid: 65aa7b23174fe5c41b28d370c3ee0dcf, type: 3}
     - target: {fileID: 6583297765613088398, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
+      propertyPath: BiasProgress
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583297765613088398, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
+      propertyPath: DataBreachBar
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6583297765613088398, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
       propertyPath: AccuracyProgress
-      value: 21
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6713184803568849528, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
       propertyPath: clip
       value: 
       objectReference: {fileID: 8300000, guid: 0b4d3f7d7adb0db4aa161f14e16b8756, type: 3}
+    - target: {fileID: 6713184803568849528, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
+      propertyPath: BiasProgress
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6713184803568849528, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
+      propertyPath: DataBreachBar
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 6713184803568849528, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
+      propertyPath: AccuracyProgress
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 6841076205851469559, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
       propertyPath: clip
       value: 
       objectReference: {fileID: 8300000, guid: 0b4d3f7d7adb0db4aa161f14e16b8756, type: 3}
+    - target: {fileID: 6841076205851469559, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
+      propertyPath: BiasProgress
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 6841076205851469559, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
+      propertyPath: DataBreachBar
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6841076205851469559, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
+      propertyPath: AccuracyProgress
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7516832317415244336, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
       propertyPath: clip
       value: 
       objectReference: {fileID: 8300000, guid: 65aa7b23174fe5c41b28d370c3ee0dcf, type: 3}
     - target: {fileID: 7516832317415244336, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
+      propertyPath: BiasProgress
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7516832317415244336, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
+      propertyPath: DataBreachBar
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7516832317415244336, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
       propertyPath: AccuracyProgress
-      value: 21
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7939207908747586052, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -17123,6 +17239,18 @@ PrefabInstance:
       propertyPath: clip
       value: 
       objectReference: {fileID: 8300000, guid: 0b4d3f7d7adb0db4aa161f14e16b8756, type: 3}
+    - target: {fileID: 8304059880572437476, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
+      propertyPath: BiasProgress
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304059880572437476, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
+      propertyPath: DataBreachBar
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 8304059880572437476, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
+      propertyPath: AccuracyProgress
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 8647759160982452448, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -17131,6 +17259,18 @@ PrefabInstance:
       propertyPath: clip
       value: 
       objectReference: {fileID: 8300000, guid: 0b4d3f7d7adb0db4aa161f14e16b8756, type: 3}
+    - target: {fileID: 8806659619617207348, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
+      propertyPath: BiasProgress
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8806659619617207348, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
+      propertyPath: DataBreachBar
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8806659619617207348, guid: 19f9904f3bdbd7a44ac861f27341a257, type: 3}
+      propertyPath: AccuracyProgress
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
