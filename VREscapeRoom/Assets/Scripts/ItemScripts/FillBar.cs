@@ -21,13 +21,14 @@ public class FillBar : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.H))
         {
             AddData();
+            
         }
     }
 
 
     public void AddData()
     {
-        source.PlayOneShot(clip);
+      //  source.PlayOneShot(clip);
         GameManager.Instance.BiasValue += BiasProgress;
         GameManager.Instance.AccuracyValue += AccuracyProgress;
         GameManager.Instance.DatabreachValue += DataBreachBar;
