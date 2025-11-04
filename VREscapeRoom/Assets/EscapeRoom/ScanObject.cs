@@ -11,6 +11,8 @@ public class ScanObject : MonoBehaviour
     
     [SerializeField] private GameObject scanEffect;
     private ScannableObject currentScanned;
+    
+    bool isGrabbed;
 
     private void Start()
     {
@@ -18,8 +20,6 @@ public class ScanObject : MonoBehaviour
         {
             scanner = FindObjectOfType<Scanner>();
         }
-        
-        
     }
 
     /// <summary>
@@ -27,21 +27,18 @@ public class ScanObject : MonoBehaviour
     /// </summary>
      void Update()
      {
-         if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger)|| Input.GetKeyDown(KeyCode.E))
+         if (OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger) && isGrabbed || Input.GetKeyDown(KeyCode.E))
          {
              ScanTarget();
          }
-
-         if (OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger))
+         if (OVRInput.GetDown(OVRInput.Button.One))
          {
              FlagTarget();
          }
-
-         if (Input.GetKeyDown(KeyCode.S) && targetObj != null)
+         Debug.Log("isGrabbed:" + isGrabbed);
+         if (OVRInput.GetUp( OVRInput.Button.SecondaryHandTrigger))
          {
-             Debug.Log("Hellllooo");
-             targetObj.gameObject.tag = "Scanned";
-             Debug.Log($"Tagged {targetObj.gameObject.name} as {targetObj.gameObject.tag}");
+             isGrabbed = false;
          }
     }
 
@@ -81,5 +78,22 @@ public class ScanObject : MonoBehaviour
         fillBar.AddData();
     }
     
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("GameController"))
+        {
+            isGrabbed = true;
+            Debug.Log("Object grabbed");
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("GameController"))
+        {
+            isGrabbed = false;
+            Debug.Log("Object released");
+        }
+    }
 }
 
