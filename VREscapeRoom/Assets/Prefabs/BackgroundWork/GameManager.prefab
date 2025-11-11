@@ -44,5 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3db99e6cc0899624494e80ae1b75c813, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BiasBar: {fileID: 0}
-  AccuracyBar: {fileID: 0}
+  scene:
+    m_Handle: 0
+  Accuracy: {fileID: 0}
+  Bias: {fileID: 0}
+  DataBreach: {fileID: 0}

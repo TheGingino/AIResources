@@ -38344,25 +38344,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 911967920}
     - target: {fileID: 7777149922109679275, guid: 17e3e89262fbec743a3a6713eaa68b8e, type: 3}
-      propertyPath: BiasBar
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7777149922109679275, guid: 17e3e89262fbec743a3a6713eaa68b8e, type: 3}
-      propertyPath: DataBar
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7777149922109679275, guid: 17e3e89262fbec743a3a6713eaa68b8e, type: 3}
       propertyPath: Accuracy
       value: 
       objectReference: {fileID: 8458706}
+    - target: {fileID: 7777149922109679275, guid: 17e3e89262fbec743a3a6713eaa68b8e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7777149922109679275, guid: 17e3e89262fbec743a3a6713eaa68b8e, type: 3}
       propertyPath: DataBreach
       value: 
       objectReference: {fileID: 1228126010}
     - target: {fileID: 7777149922109679275, guid: 17e3e89262fbec743a3a6713eaa68b8e, type: 3}
-      propertyPath: AccuracyBar
+      propertyPath: sceneAsset
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 102900000, guid: 1eaf9cbd981ae6a459d07338cdb2300c, type: 3}
     - target: {fileID: 8771552961475363860, guid: 17e3e89262fbec743a3a6713eaa68b8e, type: 3}
       propertyPath: m_Name
       value: GameManager
