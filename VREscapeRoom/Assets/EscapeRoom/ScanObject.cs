@@ -47,7 +47,7 @@ public class ScanObject : MonoBehaviour
         targetObj = target;
     }
 
-    public void ScanTarget()
+    public async void ScanTarget()
     {
         Debug.Log("ScanTarget called");
         //if (grabbed == null) return;
@@ -69,7 +69,7 @@ public class ScanObject : MonoBehaviour
         SetCurrentTarget(currentScanned);
         Debug.Log("E pressed");
 
-        scanner.ScanAsync(targetObj);
+        await scanner.ScanAsync(targetObj);
     }
 
     public void FlagTarget()
