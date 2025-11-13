@@ -6,10 +6,11 @@ public class Scanner : MonoBehaviour
 {
     public OllamaClient2 ollama;
     public AIAssistantController assistant;
+    public ShowData showData; 
 
     private CancellationTokenSource _cts;
 
-    public async Task<AssistantResult> ScanAsync(ScannableObject target)
+    public async Task ScanAsync(ScannableObject target)
     {
         _cts?.Cancel();
         _cts = new CancellationTokenSource();
@@ -29,7 +30,42 @@ public class Scanner : MonoBehaviour
             };
         }
         assistant.OnScanResult(target, result);
-        return result;
+        
+    }
+
+    public void OnObjectScanned(ScannableObject scanned)
+    {
+        if (scanned == null)
+        {
+            Debug.LogWarning("Scanner.OnObjectScanned called with null scanned object.");
+            return;
+        }
+
+        // Ensure showData is assigned, try to find one in scene as a fallback
+        if (showData == null)
+        {
+            showData = FindObjectOfType<ShowData>();
+            if (showData == null)
+            {
+                Debug.LogError("Scanner.OnObjectScanned: showData is not assigned and no ShowData found in scene. Assign ShowData in the inspector.");
+                return;
+            }
+            else
+            {
+                Debug.Log("Scanner.OnObjectScanned: showData auto-assigned via FindObjectOfType.");
+            }
+        }
+
+        var data = new ScanResult
+        {
+            status = "warning",
+            labels = new[] { "Phishing", "Social engineering" },
+            description = "Let op: dit bericht vraagt om inloggegevens.",
+            actions = new[] { "Negeer", "Meld bij security" },
+            score = 72
+        };
+
+        showData.ShowScanResult(scanned, data);
     }
 
     public void CancelScan() => _cts?.Cancel();

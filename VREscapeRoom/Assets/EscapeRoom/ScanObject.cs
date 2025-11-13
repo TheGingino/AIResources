@@ -12,6 +12,8 @@ public class ScanObject : MonoBehaviour
     [SerializeField] private GameObject scanEffect;
     private ScannableObject currentScanned;
     
+    private ScanResult scanResult;
+    
     bool isGrabbed;
 
     private void Start()
@@ -69,7 +71,8 @@ public class ScanObject : MonoBehaviour
         SetCurrentTarget(currentScanned);
         Debug.Log("E pressed");
 
-        await scanner.ScanAsync(targetObj);
+        //await scanner.ScanAsync(targetObj);
+        scanner.OnObjectScanned(targetObj);
     }
 
     public void FlagTarget()
